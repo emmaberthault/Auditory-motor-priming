@@ -1,0 +1,45 @@
+trial{
+trial_duration=stimuli_length;
+#trial_type=stimuli_length
+
+  picture {                 
+    text {                
+        caption = "+";
+        font_size = 44;
+        font_color = 200,200,200;
+    };                   
+    x = 0; y = 0;
+   } ;
+
+   time = 0; 
+   duration = 6850;  
+
+
+
+#Ce que met si pas besoin et dans notre cas juste target suffit
+sound{wavefile $target;};
+port_code=$target_code; #101/102/103/104 en fonction de la condition avant le 100 veut dire est la cible
+time=1000;
+code="$target";
+
+
+# Question ou croix de fixation
+picture{
+text $Qtest;
+x=0;y=0;
+};
+time=6850; 
+duration=$Qdur;
+code="$Code_Q;";
+port_code=$Code_Q;
+
+target_button=$response; 
+
+   picture {} ;
+   time = 7850; 
+   duration = 1000;
+
+
+};
+
+

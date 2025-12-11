@@ -1,0 +1,2 @@
+prime	prime_code		inst;
+training	T	tappe;

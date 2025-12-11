@@ -1,0 +1,5 @@
+prime	prime_code	target_code	target	Qtest	Qdur	phrase	response	Code_Q	Q_trigg	inst;
+P0	1	101	practise1	voiture	500	0	1	11	111	none;
+P0	2	102	practise2	tiroir	500	0	2	22	221	tapping;
+P1	3	103	practise3	passe	500	0	2	21	211	beat;
+P1	4	104	practise1	soeur	500	0	1	11	111	both;

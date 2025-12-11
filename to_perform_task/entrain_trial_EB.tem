@@ -1,0 +1,85 @@
+trial{
+trial_duration=stimuli_length;
+#trial_type=stimuli_length
+
+  picture {                 
+    text {                
+        caption = "+";
+        font_size = 44;
+        font_color = 200,200,200;
+    };                   
+    x = 0; y = 0;
+   } ;
+
+   time = 0; 
+   duration = 1000;   
+
+# Instruction condition
+picture{
+text $inst;
+x=0;y=0;
+};
+time=1000; 
+duration=5910; #1500 avant amorce commence; de base 6150 pour que soit présent tout le long amorce
+
+
+
+#l'amorce est presentee
+sound{wavefile $prime;};
+port_code=$prime_code;
+time=2500;
+code="$prime/$inst";
+
+# code="$prime, $inst, $my_code1, $mylast_code";
+
+
+# Ce que mettrait si besoin de target code 
+#sound{wavefile $target;};
+#port_code=$target_code; #10 & 9 en fonction de si cue était régulière ou irrégulier dans le bloc de 4
+#time=7150;
+#code="$target; $target_code";
+
+
+ #Remet croix de fixation pour toute la durée des sons
+picture {                 
+    text {                
+        caption = "+";
+        font_size = 44;
+        font_color = 200,200,200;
+    };                   
+    x = 0; y = 0;
+   } ;
+
+   time = 6910; #7150
+   duration = 6090; #5850 
+
+
+
+#Ce que met si pas besoin et dans notre cas juste target suffit
+sound{wavefile $target;};
+port_code=$target_code; #101/102/103/104 en fonction de la condition avant le 100 veut dire est la cible
+time=7150;
+code="$target";
+
+
+# Question ou croix de fixation
+picture{
+text $Qtest;
+x=0;y=0;
+};
+time=13000; 
+duration=$Qdur;
+code="$position-$Code_Q-$Syllabe-$position";
+port_code=$Code_Q;
+
+target_button=$response; 
+
+   picture {text "ouinon";
+x=0;y=0;
+};
+   time = 13500; 
+   duration = 1500;
+
+
+};
+

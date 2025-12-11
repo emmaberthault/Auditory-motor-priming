@@ -1,0 +1,34 @@
+trial{
+trial_duration=stimuli_length;
+#trial_type=stimuli_length
+
+  picture {                 
+    text {                
+        caption = "+";
+        font_size = 44;
+        font_color = 200,200,200;
+    };                   
+    x = 0; y = 0;
+   } ;
+
+   time = 0; 
+   duration = 1000;   
+
+# Instruction condition
+picture{
+text $inst;
+x=0;y=0;
+};
+time=1000; 
+duration=31500; #1500 avant amorce commence; de base 6150 pour que soit présent tout le long amorce
+
+
+
+#l'amorce est presentee
+sound{wavefile $prime;};
+time=2500;
+code="$prime";
+
+
+};
+

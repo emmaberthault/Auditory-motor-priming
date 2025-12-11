@@ -1,0 +1,6 @@
+prime	prime_code	target_code	target	Qtest	Syllabe	position	Qdur	phrase	response	Code_Q	Q_trigg	inst;
+P2	4	104	practise2	mere	1	2	500	0	1	11	114	both;
+P2	3	103	practise3	brade	1	2	500	0	2	22	223	beat;
+P1	2	102	practise2	tiroir	2	3	500	0	2	12	122	tapping;
+P0	1	101	practise1	voiture	2	2	500	0	1	11	111	none;
+P1	2	102	practise1	peur	1	3	500	0	2	12	122	tapping;
